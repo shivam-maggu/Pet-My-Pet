@@ -7,21 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D500286E22129417005B7BBB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500286D22129417005B7BBB /* Card.swift */; };
+		D500861122117EDE00115CA5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500861022117EDE00115CA5 /* MainViewController.swift */; };
+		D500861322119D2F00115CA5 /* MyLikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500861222119D2F00115CA5 /* MyLikesViewController.swift */; };
+		D50086152211C8F500115CA5 /* Pods_Pet_My_Pet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50086142211C8F500115CA5 /* Pods_Pet_My_Pet.framework */; };
+		D50086172211C8FA00115CA5 /* Poi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50086162211C8FA00115CA5 /* Poi.framework */; };
+		D50086192211C8FF00115CA5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50086182211C8FF00115CA5 /* Alamofire.framework */; };
+		D500861B2211C90400115CA5 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D500861A2211C90400115CA5 /* SwiftKeychainWrapper.framework */; };
+		D502572622156A2F003EEE21 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D502572522156A2F003EEE21 /* TermsAndConditionsViewController.swift */; };
+		D527F94E2212A39600658F76 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = D527F94D2212A39600658F76 /* Card.xib */; };
+		D527F96E2212D64500658F76 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D527F96D2212D64500658F76 /* Kingfisher.framework */; };
+		D540A5F5221AC5EB00025D9A /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D540A5F4221AC5EB00025D9A /* AlamofireWrapper.swift */; };
 		D55D841D220EAAED00328D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D841C220EAAED00328D6B /* AppDelegate.swift */; };
-		D55D841F220EAAED00328D6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D841E220EAAED00328D6B /* ViewController.swift */; };
+		D55D841F220EAAED00328D6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D841E220EAAED00328D6B /* LoginViewController.swift */; };
 		D55D8422220EAAED00328D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55D8420220EAAED00328D6B /* Main.storyboard */; };
 		D55D8424220EAAEE00328D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55D8423220EAAEE00328D6B /* Assets.xcassets */; };
 		D55D8427220EAAEE00328D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55D8425220EAAEE00328D6B /* LaunchScreen.storyboard */; };
+		D5ECED8722157AEC002EC48B /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = D5ECED8622157AEC002EC48B /* terms.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83857C10ABBD8D0C4CF5E7F1 /* Pods-Pet My Pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pet My Pet.debug.xcconfig"; path = "Target Support Files/Pods-Pet My Pet/Pods-Pet My Pet.debug.xcconfig"; sourceTree = "<group>"; };
+		A60AD33EDD50453228FF5C8D /* Pods_Pet_My_Pet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pet_My_Pet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D500286D22129417005B7BBB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D500861022117EDE00115CA5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D500861222119D2F00115CA5 /* MyLikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikesViewController.swift; sourceTree = "<group>"; };
+		D50086142211C8F500115CA5 /* Pods_Pet_My_Pet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Pet_My_Pet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50086162211C8FA00115CA5 /* Poi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Poi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50086182211C8FF00115CA5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D500861A2211C90400115CA5 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D502572522156A2F003EEE21 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		D527F94D2212A39600658F76 /* Card.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
+		D527F96D2212D64500658F76 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D540A5F4221AC5EB00025D9A /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
 		D55D8419220EAAED00328D6B /* Pet My Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet My Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55D841C220EAAED00328D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D55D841E220EAAED00328D6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D55D841E220EAAED00328D6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D55D8421220EAAED00328D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D55D8423220EAAEE00328D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D55D8426220EAAEE00328D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D55D8428220EAAEE00328D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5ECED8622157AEC002EC48B /* terms.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		E92F6CEB71DF85ACD7F802DB /* Pods-Pet My Pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pet My Pet.release.xcconfig"; path = "Target Support Files/Pods-Pet My Pet/Pods-Pet My Pet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +56,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D527F96E2212D64500658F76 /* Kingfisher.framework in Frameworks */,
+				D500861B2211C90400115CA5 /* SwiftKeychainWrapper.framework in Frameworks */,
+				D50086192211C8FF00115CA5 /* Alamofire.framework in Frameworks */,
+				D50086172211C8FA00115CA5 /* Poi.framework in Frameworks */,
+				D50086152211C8F500115CA5 /* Pods_Pet_My_Pet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A08AE54A639BF2FA58FF7952 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83857C10ABBD8D0C4CF5E7F1 /* Pods-Pet My Pet.debug.xcconfig */,
+				E92F6CEB71DF85ACD7F802DB /* Pods-Pet My Pet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D55D8410220EAAED00328D6B = {
 			isa = PBXGroup;
 			children = (
 				D55D841B220EAAED00328D6B /* Pet My Pet */,
 				D55D841A220EAAED00328D6B /* Products */,
+				A08AE54A639BF2FA58FF7952 /* Pods */,
+				EC3A35FBEE76583DCC74ABFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +98,33 @@
 			isa = PBXGroup;
 			children = (
 				D55D841C220EAAED00328D6B /* AppDelegate.swift */,
-				D55D841E220EAAED00328D6B /* ViewController.swift */,
+				D55D841E220EAAED00328D6B /* LoginViewController.swift */,
 				D55D8420220EAAED00328D6B /* Main.storyboard */,
 				D55D8423220EAAEE00328D6B /* Assets.xcassets */,
 				D55D8425220EAAEE00328D6B /* LaunchScreen.storyboard */,
 				D55D8428220EAAEE00328D6B /* Info.plist */,
+				D500861022117EDE00115CA5 /* MainViewController.swift */,
+				D500861222119D2F00115CA5 /* MyLikesViewController.swift */,
+				D500286D22129417005B7BBB /* Card.swift */,
+				D527F94D2212A39600658F76 /* Card.xib */,
+				D502572522156A2F003EEE21 /* TermsAndConditionsViewController.swift */,
+				D5ECED8622157AEC002EC48B /* terms.html */,
+				D540A5F4221AC5EB00025D9A /* AlamofireWrapper.swift */,
 			);
 			path = "Pet My Pet";
+			sourceTree = "<group>";
+		};
+		EC3A35FBEE76583DCC74ABFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D527F96D2212D64500658F76 /* Kingfisher.framework */,
+				D500861A2211C90400115CA5 /* SwiftKeychainWrapper.framework */,
+				D50086182211C8FF00115CA5 /* Alamofire.framework */,
+				D50086162211C8FA00115CA5 /* Poi.framework */,
+				D50086142211C8F500115CA5 /* Pods_Pet_My_Pet.framework */,
+				A60AD33EDD50453228FF5C8D /* Pods_Pet_My_Pet.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D55D842B220EAAEE00328D6B /* Build configuration list for PBXNativeTarget "Pet My Pet" */;
 			buildPhases = (
+				FE5C1CDED571BFF560150FC2 /* [CP] Check Pods Manifest.lock */,
 				D55D8415220EAAED00328D6B /* Sources */,
 				D55D8416220EAAED00328D6B /* Frameworks */,
 				D55D8417220EAAED00328D6B /* Resources */,
+				A65984F9FC783AC2CE3DEB31 /* [CP] Embed Pods Frameworks */,
+				D5ECED882215AD2F002EC48B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -90,6 +156,9 @@
 		D55D8411220EAAED00328D6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1000,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Shivam Maggu";
@@ -125,18 +194,95 @@
 				D55D8427220EAAEE00328D6B /* LaunchScreen.storyboard in Resources */,
 				D55D8424220EAAEE00328D6B /* Assets.xcassets in Resources */,
 				D55D8422220EAAED00328D6B /* Main.storyboard in Resources */,
+				D5ECED8722157AEC002EC48B /* terms.html in Resources */,
+				D527F94E2212A39600658F76 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A65984F9FC783AC2CE3DEB31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pet My Pet/Pods-Pet My Pet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Poi/Poi.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Poi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pet My Pet/Pods-Pet My Pet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5ECED882215AD2F002EC48B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
+		};
+		FE5C1CDED571BFF560150FC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pet My Pet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D55D8415220EAAED00328D6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55D841F220EAAED00328D6B /* ViewController.swift in Sources */,
+				D540A5F5221AC5EB00025D9A /* AlamofireWrapper.swift in Sources */,
+				D55D841F220EAAED00328D6B /* LoginViewController.swift in Sources */,
+				D500861122117EDE00115CA5 /* MainViewController.swift in Sources */,
+				D502572622156A2F003EEE21 /* TermsAndConditionsViewController.swift in Sources */,
+				D500286E22129417005B7BBB /* Card.swift in Sources */,
 				D55D841D220EAAED00328D6B /* AppDelegate.swift in Sources */,
+				D500861322119D2F00115CA5 /* MyLikesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,16 +426,19 @@
 		};
 		D55D842C220EAAEE00328D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83857C10ABBD8D0C4CF5E7F1 /* Pods-Pet My Pet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Pet My Pet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "es.esy.shivammaggu.Pet-My-Pet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +446,19 @@
 		};
 		D55D842D220EAAEE00328D6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92F6CEB71DF85ACD7F802DB /* Pods-Pet My Pet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Pet My Pet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "es.esy.shivammaggu.Pet-My-Pet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
