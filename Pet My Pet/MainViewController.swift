@@ -36,8 +36,8 @@ class MainViewController: UIViewController, PoiViewDataSource, PoiViewDelegate {
     }
     //API call to logout from server, delete keychain token content, move view back to login view controller , display error alert in case of failure
     @objc func logoutButtonClick() {
-        let logoutUrl = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/logout")
-        AlamofireWrapper().post(parameters: nil, url: logoutUrl!) { (tokenStringObject, messageStringObject, codeIntObject) in
+        let logoutUrl: String = "logout"
+        AlamofireWrapper().post(parameters: nil, url: logoutUrl) { (tokenStringObject, messageStringObject, codeIntObject) in
             let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: "savedToken")
             if codeIntObject == 200 && removeSuccessful == true {
                 //print(self.navigationController?.viewControllers.count)
@@ -65,8 +65,8 @@ class MainViewController: UIViewController, PoiViewDataSource, PoiViewDelegate {
     func getPetList() {
         if let retrievedString: String = KeychainWrapper.standard.string(forKey: "savedToken") {
             let headers: HTTPHeaders = ["Authorization" : retrievedString]
-            let petaccess = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets")
-            AlamofireWrapper().get(url: petaccess!, headers: headers) { (petDataStringObject) in
+            let petaccess: String = "pets"
+            AlamofireWrapper().get(url: petaccess, headers: headers) { (petDataStringObject) in
                 self.petListData = NSMutableArray(array: petDataStringObject as! [Any], copyItems: true) as! [[String : Any]]
                 //print(self.petListData.count)
                 self.createViews()
@@ -98,15 +98,15 @@ class MainViewController: UIViewController, PoiViewDataSource, PoiViewDelegate {
         case .left:
             let id = self.petListData[position - 1]["_id"]
             let likeStatus: [String : Any] = ["liked" : false]
-            let url = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets/likes/\(id!)")
-            AlamofireWrapper().put(parameters: likeStatus, url: url!) { (response) in
+            let url: String = "pets/likes/\(id!)"
+            AlamofireWrapper().put(parameters: likeStatus, url: url) { (response) in
                 //print(response)
             }
         case .right:
             let id = self.petListData[position - 1]["_id"]
             let likeStatus: [String : Any] = ["liked" : true]
-            let url = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets/likes/\(id!)")
-            AlamofireWrapper().put(parameters: likeStatus, url: url!) { (response) in
+            let url: String = "pets/likes/\(id!)"
+            AlamofireWrapper().put(parameters: likeStatus, url: url) { (response) in
                 //print(response)
             }
         }

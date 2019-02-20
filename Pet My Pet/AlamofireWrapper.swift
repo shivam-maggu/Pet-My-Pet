@@ -13,8 +13,12 @@ import SwiftKeychainWrapper
 
 class AlamofireWrapper {
     
-    func post (parameters: Parameters?, url: URL, handler: @escaping ((String?, String?, Int) -> Void)) {
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { (response) in
+    let baseURL = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000")
+    
+    func post (parameters: Parameters?, url: String, handler: @escaping ((String?, String?, Int) -> Void)) {
+        let finalURL = baseURL?.appendingPathComponent(url)
+        //print(finalURL!)
+        Alamofire.request(finalURL!, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { (response) in
             switch response.result {
             case .success:
                 //print("Validation Successful")
@@ -42,14 +46,18 @@ class AlamofireWrapper {
         }
     }
     
-    func put (parameters: Parameters, url: URL, handler: @escaping ((Any) -> Void)) {
-        Alamofire.request(url, method: .put, parameters: parameters).responseJSON /*{ response in
+    func put (parameters: Parameters, url: String, handler: @escaping ((Any) -> Void)) {
+        let finalURL = baseURL?.appendingPathComponent(url)
+        //print(finalURL!)
+        Alamofire.request(finalURL!, method: .put, parameters: parameters).responseJSON /*{ response in
          handler(response.result.value!)
          }*/
     }
     
-    func get(url: URL, headers: HTTPHeaders?, handler: @escaping ((NSArray) -> Void)) {
-        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
+    func get(url: String, headers: HTTPHeaders?, handler: @escaping ((NSArray) -> Void)) {
+        let finalURL = baseURL?.appendingPathComponent(url)
+        //print(finalURL!)
+        Alamofire.request(finalURL!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
             switch response.result {
             case .success:
                 if let responseJsonObject: NSDictionary = response.result.value as? NSDictionary {

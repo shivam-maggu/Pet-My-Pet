@@ -93,8 +93,8 @@ class  MyLikesViewController: UITableViewController, UISearchBarDelegate {
     
     // API call, set table view data source and delegate to self, show error in case of failure
     func getLikes() {
-        let url = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets/likes")
-        AlamofireWrapper().get(url: url!, headers: nil) { (petDataStringObject) in
+        let url: String = "pets/likes"
+        AlamofireWrapper().get(url: url, headers: nil) { (petDataStringObject) in
             self.likedPetList = NSMutableArray(array: petDataStringObject as! [Any], copyItems: true) as! [[String : Any]]
             self.setLikedDataToCell()
             self.tableView.dataSource = self

@@ -98,8 +98,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             "username" : "JohnDoe",//username.text!,
             "password" : "nineleaps"//password.text!
         ]
-        let loginUrl = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/login")
-        AlamofireWrapper().post(parameters: parameters, url: loginUrl!) { (tokenStringObject, messageStringObject, codeIntObject) in
+        let loginUrl: String = "login"
+        AlamofireWrapper().post(parameters: parameters, url: loginUrl) { (tokenStringObject, messageStringObject, codeIntObject) in
             if codeIntObject == 200 {
                 self.saveSuccessful = KeychainWrapper.standard.set(tokenStringObject!, forKey: "savedToken", withAccessibility: .afterFirstUnlock)
                 if self.saveSuccessful {
